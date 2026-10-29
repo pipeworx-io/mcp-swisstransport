@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-swisstransport",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Swiss Transport MCP — wraps Transport Open Data API (free, no auth)",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-swisstransport": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "swisstransport"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-swisstransport.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/swisstransport",
   "pipeworx": {
-    "sourceHash": "v1-2d0ddf3b701d349d8c91b1854037508c023f6943fbe26f4852cfbb7afb858535",
-    "sourceCommit": "d4a9636716f113458bd312e487c065f76548df8c"
+    "mode": "gateway",
+    "slug": "swisstransport",
+    "gatewaySlug": "swisstransport",
+    "sourceHash": "v1-805a073a086284557f22532c6b9abaf3972c6c9793a9f051efb4e6da5eaa1eeb",
+    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
   }
 }
