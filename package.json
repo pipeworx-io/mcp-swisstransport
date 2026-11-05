@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-swisstransport",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Swiss Transport MCP — wraps Transport Open Data API (free, no auth)",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "swisstransport",
     "gatewaySlug": "swisstransport",
-    "sourceHash": "v1-805a073a086284557f22532c6b9abaf3972c6c9793a9f051efb4e6da5eaa1eeb",
-    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
+    "sourceHash": "v1-17a355136bc2b7e129d9a0bd5e856aa590d1ea6015b3714e90a69cdb61b35e7a",
+    "sourceCommit": "868e119d526d5409447b7ee2149afba7eb9d2593"
   }
 }
